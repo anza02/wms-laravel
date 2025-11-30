@@ -103,14 +103,14 @@
             <th>Lokasi</th>
         </tr>
         <tr>
-            <td>Sabun Mandi</td>
-            <td>Kebutuhan Rumah</td>
+            <td>Laptop Computer</td>
+            <td>Elektronik</td>
             <td>120</td>
             <td>Rak A2</td>
         </tr>
         <tr>
-            <td>Sampo</td>
-            <td>Kebutuhan Rumah</td>
+            <td>Wireless Mouse</td>
+            <td>Elektronik</td>
             <td>60</td>
             <td>Rak B1</td>
         </tr>
