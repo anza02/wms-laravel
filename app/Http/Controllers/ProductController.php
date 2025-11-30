@@ -9,6 +9,7 @@ class ProductController extends Controller
 {
     public function index()
     {
+        // Dummy data
         $products = [
             (object)[
                 'id' => 1,
@@ -16,15 +17,15 @@ class ProductController extends Controller
                 'name' => 'Contoh Produk',
                 'stock' => 10,
                 'description' => 'Produk contoh'
-        ]
-    ];
+            ]
+        ];
 
         return view('products.index', compact('products'));
     }
 
     public function create()
     {
-        //
+        return view('products.create');
     }
 
     public function store(Request $request)
@@ -39,7 +40,7 @@ class ProductController extends Controller
 
     public function edit(Product $product)
     {
-        //
+        return view('products.edit', compact('product'));
     }
 
     public function update(Request $request, Product $product)
