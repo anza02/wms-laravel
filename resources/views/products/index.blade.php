@@ -9,6 +9,10 @@
     <a href="{{ route('products.create') }}" class="btn btn-success">Tambah Produk</a>
 </div>
 
+@if(session('success'))
+<div class="alert alert-success">{{ session('success') }}</div>
+@endif
+
 <table class="table table-bordered table-striped">
     <thead class="table-dark">
         <tr>
@@ -29,7 +33,8 @@
             <td>
                 <a href="{{ route('products.edit', $product->id) }}" class="btn btn-primary btn-sm">Edit</a>
 
-                <form action="{{ route('products.destroy', $product->id) }}" method="POST" class="d-inline"
+                <form action="{{ route('products.destroy', $product->id) }}" 
+                      method="POST" class="d-inline"
                       onsubmit="return confirm('Hapus produk ini?')">
                     @csrf
                     @method('DELETE')

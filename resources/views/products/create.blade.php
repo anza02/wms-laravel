@@ -11,22 +11,22 @@
 
     <div class="mb-3">
         <label class="form-label">SKU</label>
-        <input type="text" name="sku" class="form-control" placeholder="Contoh: WID-001" required>
+        <input type="text" name="sku" class="form-control" required>
     </div>
 
     <div class="mb-3">
         <label class="form-label">Nama Produk</label>
-        <input type="text" name="name" class="form-control" placeholder="Contoh: Wireless Mouse" required>
+        <input type="text" name="name" class="form-control" required>
     </div>
 
     <div class="mb-3">
         <label class="form-label">Stok</label>
-        <input type="number" name="stock" class="form-control" placeholder="Contoh: 150" required>
+        <input type="number" name="stock" class="form-control" required>
     </div>
 
     <div class="mb-3">
         <label class="form-label">Deskripsi</label>
-        <textarea name="description" class="form-control" placeholder="Opsional"></textarea>
+        <textarea name="description" class="form-control"></textarea>
     </div>
 
     <button class="btn btn-primary">Simpan</button>
