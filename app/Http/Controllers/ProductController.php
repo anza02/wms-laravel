@@ -11,12 +11,13 @@ class ProductController extends Controller
     {
         $products = [
             (object)[
+                'id' => 1,
                 'sku' => 'SKU001',
                 'name' => 'Contoh Produk',
                 'stock' => 10,
                 'description' => 'Produk contoh'
-            ]
-        ];
+        ]
+    ];
 
         return view('products.index', compact('products'));
     }
