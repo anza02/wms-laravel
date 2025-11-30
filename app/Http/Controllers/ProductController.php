@@ -8,12 +8,18 @@ use Illuminate\Http\Request;
 class ProductController extends Controller
 {
     public function index()
-{
-    $products = [];
+    {
+        $products = [
+            (object)[
+                'sku' => 'SKU001',
+                'name' => 'Contoh Produk',
+                'stock' => 10,
+                'description' => 'Produk contoh'
+            ]
+        ];
 
-    return view('products.index', compact('products'));
-}
-
+        return view('products.index', compact('products'));
+    }
 
     public function create()
     {
