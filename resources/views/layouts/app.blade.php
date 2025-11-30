@@ -20,4 +20,8 @@
 </nav>
 
 <div class="container">
-    @yiel
+    @yield('content')
+</div>
+
+</body>
+</html>
